@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 8888;
 app.use(cors(
   {
-    origin: ["https://ritika-mehta-portfolio.vercel.app"],
+    origin: ["https://portfolio-fe-wine.vercel.app"],
     methods: ["POST" , "GET"],
     credentials: true
   }
