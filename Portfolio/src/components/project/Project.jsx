@@ -11,7 +11,7 @@ export default function Project() {
 
 
   useEffect(() => {
-    fetch('http://localhost:8888/projects')
+    fetch('https://ritika-mehta-portfolio.vercel.app/projects')
       .then(response => {
       if (!response.ok) { 
         throw new Error('Network response was not ok');
