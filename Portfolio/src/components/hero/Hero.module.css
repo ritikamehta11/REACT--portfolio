@@ -1,0 +1,91 @@
+@import url('../../var.css');
+
+
+
+.heading {
+  color: var(--primary-lt);
+  font-size: 2em;
+  text-align: center;
+  border-bottom: 1px solid var(--accent-two);
+}
+
+
+
+.content {
+  display: flex;
+  height: 80vh;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+
+}
+
+.heroText {
+  /* width: 60%; */
+  /* height: 80%; */
+  justify-self: center;
+}
+
+.heroText>p {
+  font-size: 2em;
+  color: var(--primary-lt);
+}
+
+.heroMainHeading {
+  color: var(--accent-two);
+  font-size: 2.2em;
+}
+
+.block {
+  display: block;
+}
+
+/* .heroImgDiv {
+  flex-shrink: ;
+} */
+
+.heroImgOuterRing {
+  border: 2px solid var(--accent-one);
+  border-radius: 50%;
+  padding: 2em;
+}
+
+.heroImgOuterRing>img {
+  width: 100%;
+
+}
+
+@media (max-width: 1024px) {
+  .heroText {
+    font-size: 0.65em;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroHeader {
+    display: flex;
+    /* to make a menu - remove this column and add useState */
+    flex-direction: column;
+    justify-content: space-around;
+
+
+  }
+
+  .heroText {
+    font-size: x-small;
+    text-align: center;
+  }
+
+  .content {
+    margin: 4em auto;
+    flex-direction: column-reverse;
+    gap: 3em;
+
+    height: fit-content;
+  }
+
+  .heroImgDiv {
+    width: 60%;
+  }
+
+}

@@ -1,0 +1,38 @@
+@import '../../var.css';
+
+.contact {
+  height: fit-content;
+  color: var(--primary-lt);
+  font-family: "poppins";
+}
+
+.heading {
+  color: var(--primary-lt);
+  font-size: 2em;
+  text-align: center;
+  border-bottom: 1px solid var(--accent-two);
+  margin: 4em auto;
+  font-family: 'Castoro';
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+
+.socialmedia {
+  display: flex;
+  gap: 2em;
+}
+
+.socialmedia>img {
+  width: 2em;
+  height: 2em;
+}

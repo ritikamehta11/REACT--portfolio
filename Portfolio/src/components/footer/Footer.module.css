@@ -1,0 +1,7 @@
+@import '../../var.css';
+
+footer {
+  background-color: var(--secondary-dk);
+  color: var(--primary-lt);
+  margin-top: 2em;
+}

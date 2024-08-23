@@ -1,0 +1,29 @@
+@import '../../var.css';
+
+
+
+.navUl {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navItem {
+  list-style: none;
+  border: 2px solid var(--accent-two);
+  padding: 0.5em 7%;
+}
+
+.navItem>a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--accent-two);
+}
+
+@media (max-width: 768px) {
+
+
+  .navItem {
+    padding: 0.3em;
+    border: none;
+  }
+}

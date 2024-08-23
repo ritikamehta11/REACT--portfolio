@@ -1,0 +1,114 @@
+@import '../../var.css';
+
+.project {
+  min-height: 50vh;
+  height: fit-content;
+  font-family: "poppins";
+}
+
+.heading {
+  color: var(--primary-lt);
+  font-size: 2em;
+  text-align: center;
+  border-bottom: 1px solid var(--accent-two);
+  margin: 4em auto;
+  font-family: 'Castoro';
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+  justify-content: space-between;
+}
+
+.left {
+  width: 20%;
+}
+
+.right {
+  width: 60%;
+}
+
+.tabs {
+  color: var(--primary-lt);
+  font-size: 1.2em;
+  text-transform: capitalize;
+  background-color: var(--secondary-dk);
+  border-left: 3px solid var(--accent-one);
+  padding: 1.5em 1em;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.projectDetails {
+  border: 2px solid var(--accent-one);
+  padding: 3em;
+  color: var(--primary-lt);
+}
+
+.tabs:hover {
+
+  border-left: 10px solid var(--accent-one);
+}
+
+
+.projectDiv {
+  display: flex;
+  gap: 2em;
+}
+
+.projectInfo>h1 {
+  font-size: 1.2em;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.projectType {
+  font-weight: 100;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.projectDesc {
+  margin-top: 0.5em;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+.demo {
+  margin: 2em 0em;
+  padding: 0.5em 2em;
+  background-color: var(--secondary-dk);
+  border: 2px solid var(--accent-two);
+  font-size: 0.7em;
+}
+
+.demo>a {
+  color: var(--accent-two);
+  text-decoration: none;
+}
+
+.image {
+  width: 50%;
+}
+
+@media (max-width:768px) {
+  .left {
+    width: 70%;
+  }
+
+  .tabs {
+    width: 100%;
+  }
+
+  .content,
+  .projectInfo {
+    flex-direction: column;
+  }
+
+  .right {
+    margin-top: 2em;
+    width: 90%;
+  }
+}

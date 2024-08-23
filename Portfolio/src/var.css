@@ -1,0 +1,17 @@
+:root {
+  /* COLORS */
+  --primary-lt: #FBFFF1;
+  --primary-dk: #27233A;
+
+  --secondary-dk: #3E385D;
+
+  --accent-one: #379634;
+  --accent-two: #F49FBC;
+
+
+  /* FONT */
+  --font-heading: "Castoro", serif;
+  --font-body: "Poppins", sans-serif;
+
+
+}

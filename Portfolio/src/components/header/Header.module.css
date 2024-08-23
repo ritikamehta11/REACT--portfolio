@@ -1,0 +1,6 @@
+@import '../../var.css';
+
+.header {
+  background-color: var(--secondary-dk);
+  padding: 1.5em;
+}

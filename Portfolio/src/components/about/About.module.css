@@ -1,0 +1,76 @@
+@import url('../../var.css');
+
+.about {
+  height: 90vh;
+
+}
+
+.heading {
+  color: var(--primary-lt);
+  font-size: 2em;
+  text-align: center;
+  border-bottom: 1px solid var(--accent-two);
+  margin: 4em auto;
+}
+
+.aboutImgDiv {
+  width: 30%;
+}
+
+.aboutImgOuterBox {
+  border: 2px solid var(--accent-one);
+
+  padding: 2em;
+}
+
+.aboutImgOuterBox>img {
+  width: 100%;
+
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  align-items: center;
+}
+
+.aboutContent {
+  width: 40%;
+
+}
+
+.aboutText {
+  font-size: 1.25em;
+  color: var(--primary-lt);
+  line-height: 1.4em;
+  font-weight: 200;
+  font-family: var(--font-body);
+
+}
+
+@media (max-width:1024px) {
+  .about {
+    height: fit-content;
+  }
+}
+
+@media (max-width:768px) {
+  .heading {
+    margin: 1em auto;
+  }
+
+  .about {
+    margin-bottom: 20%;
+  }
+
+  .aboutContent {
+    width: 90%;
+    font-size: 0.8em;
+  }
+
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,74 @@
+@import '../../var.css';
+
+
+.skill {
+  min-height: 60vh;
+  height: fit-content;
+
+}
+
+.heading {
+  color: var(--primary-lt);
+  font-size: 2em;
+  text-align: center;
+  border-bottom: 1px solid var(--accent-two);
+  margin: 4em auto;
+  font-family: 'Castoro';
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+  font-family: 'poppins';
+}
+
+.list>li {
+  background-color: var(--secondary-dk);
+  padding: 2em 3em;
+  list-style: none;
+  border: 2px solid var(--accent-one);
+  text-transform: capitalize;
+  color: var(--primary-lt);
+  text-align: center;
+  line-height: 1.6em;
+  width: 20%;
+  flex-wrap: wrap;
+
+
+}
+
+.skillHeading {
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+.skillDesc {
+  font-weight: 200;
+  font-size: 1em;
+  /* letter-spacing: 0.1em; */
+}
+
+
+@media (max-width:1024px) {
+  .skill {
+    height: fit-content;
+  }
+
+  .heading {
+    margin: 1.6em auto;
+  }
+
+  .list>li {
+    width: 40%;
+    padding: 1em;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width:768px) {
+  .list>li {
+    width: 25%;
+  }
+}
