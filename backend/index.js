@@ -6,7 +6,14 @@ const cors = require('cors');
 const app = express();
 
 const PORT = process.env.PORT || 8888;
-app.use(cors());
+app.use(cors(
+  {
+    origin: ["https://ritika-mehta-portfolio.vercel.app"],
+    methods: ["POST" , "GET"],
+    credentials: true
+  }
+
+));
 const mongoUri = 'mongodb+srv://portfoliohost:tQ4FhTNl7qN7DzQg@portfolio.jmbhc.mongodb.net/portfoliodb?retryWrites=true&w=majority&appName=portfolio';
 
 // Connect to MongoDB Atlas using Mongoose
