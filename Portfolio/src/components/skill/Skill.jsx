@@ -5,7 +5,7 @@ export default function Skills() {
   const [skills, setSkills] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8888/skills')
+    fetch('https://ritika-mehta-portfolio.vercel.app/skills')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
