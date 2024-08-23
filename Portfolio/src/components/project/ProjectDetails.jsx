@@ -5,7 +5,7 @@ export default function ProjectDetails({ projectId }) {
 
   useEffect(() => {
     if (projectId) {
-      fetch(`http://localhost:8888/projects/${projectId}`)
+      fetch(`https://ritika-mehta-portfolio.vercel.app/projects/${projectId}`)
         .then(response => {
            
           if (!response.ok) {
