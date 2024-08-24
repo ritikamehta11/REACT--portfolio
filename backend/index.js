@@ -28,7 +28,7 @@ mongoose.connect(mongoUri, {
   .catch(err => console.error('MongoDB connection error:', err));
 
 app.get("/", async (req, res) => {
-  res.json();
+  console.log("successful");
 
 });
 
