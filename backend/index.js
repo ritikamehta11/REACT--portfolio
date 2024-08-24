@@ -26,7 +26,9 @@ mongoose.connect(mongoUri, {
 
 app.get("/", async (req, res) => {
   res.json();
-})
+
+});
+
 app.get('/skills', async (req, res) => {
  try {
     const skills = await Skills.find();
