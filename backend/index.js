@@ -7,6 +7,8 @@ const cors = require('cors');
 const app = express();
 
 const PORT = process.env.PORT || 8888;
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(cors(
   {
     origin: ["https://portfolio-fe-wine.vercel.app"],
