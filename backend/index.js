@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const Skills = require('./models/skill.js')
@@ -14,7 +15,7 @@ app.use(cors(
   }
 
 ));
-const mongoUri = 'mongodb+srv://portfoliohost:tQ4FhTNl7qN7DzQg@portfolio.jmbhc.mongodb.net/portfoliodb?retryWrites=true&w=majority&appName=portfolio';
+const mongoUri = process.env.MONGO_URI;
 
 // Connect to MongoDB Atlas using Mongoose
 mongoose.connect(mongoUri, {
