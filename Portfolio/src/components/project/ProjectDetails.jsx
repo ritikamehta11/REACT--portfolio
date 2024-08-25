@@ -5,7 +5,7 @@ export default function ProjectDetails({ projectId }) {
 
   useEffect(() => {
     if (projectId) {
-      fetch(`https://ritika-mehta-portfolio.vercel.app/projects/${projectId}`)
+      fetch(`https://react-portfolio-sa7t.onrender.com/projects/${projectId}`)
         .then(response => {
            
           if (!response.ok) {
