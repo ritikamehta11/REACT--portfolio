@@ -12,7 +12,7 @@ export default function Project() {
 
 
   useEffect(() => {
-    fetch('https://ritika-mehta-portfolio.vercel.app/projects')
+    fetch('https://react-portfolio-sa7t.onrender.com/projects')
       .then(response => {
       if (!response.ok) { 
         throw new Error('Network response was not ok');
