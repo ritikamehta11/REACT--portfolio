@@ -24,7 +24,6 @@ export default function Project() {
   }, []);
 
   function handleSelectedProject(id) {
-    // console.log(id);
     setSelectedProjectId(id);
   }
   return (
