@@ -9,14 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 8888;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors(
-  {
-    origin: ["https://portfolio-fe-wine.vercel.app"],
-    methods: ["POST" , "GET"],
-    credentials: true
-  }
-
-));
+app.use(cors());
 const mongoUri = process.env.MONGO_URI;
 
 // Connect to MongoDB Atlas using Mongoose
