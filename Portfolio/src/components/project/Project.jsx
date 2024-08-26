@@ -18,7 +18,7 @@ export default function Project() {
         throw new Error('Network response was not ok');
       }
      
-      return response.json();
+      return response.json(); 
     })
       .then(data => setprojects(data)) 
   }, []);

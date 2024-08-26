@@ -11,14 +11,14 @@ export default function ProjectDetails({ projectId }) {
           if (!response.ok) {
             throw new Error('Network response was not ok');
           }
-     
+      
           return response.json();
         })
         .then(data => setproject(data))
     }
   }, [projectId]);
   
-
+ 
   return (
     <div className={styles.projectDetails}>
       {project && (

@@ -14,4 +14,4 @@ export default function ProjectList ({ projects, onSelectProject }) {
       }
     </div>
   )
-}
+}  

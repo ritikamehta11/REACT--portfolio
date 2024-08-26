@@ -43,6 +43,9 @@
 
 .projectDetails {
   border: 2px solid var(--accent-one);
+  /* border: 2px solid transparent;
+  box-shadow: 0 0 6px 3px #379634d4; 
+  border-radius: 10px;*/
   padding: 3em;
   color: var(--primary-lt);
 }
@@ -93,6 +96,27 @@
   width: 50%;
 }
 
+
+
+@media (max-width:1024px) {
+
+  .content,
+  .projectInfo {
+    gap: 1em;
+    flex-direction: column;
+  }
+
+  .projectDiv {
+    width: 100%;
+    flex-direction: column;
+
+  }
+
+  .image {
+    width: 100%;
+  }
+}
+
 @media (max-width:768px) {
   .left {
     width: 70%;
@@ -102,10 +126,7 @@
     width: 100%;
   }
 
-  .content,
-  .projectInfo {
-    flex-direction: column;
-  }
+
 
   .right {
     margin-top: 2em;
