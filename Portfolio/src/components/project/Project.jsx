@@ -3,7 +3,7 @@ import styles from './Project.module.css';
 import ProjectList from './ProjectList';
 import ProjectDetails from './ProjectDetails';
 import appstyles from '../../App.module.css';
-import bodyParser from 'body-parser';
+
 
 export default function Project() {
   const [projects, setprojects] = useState([]);
