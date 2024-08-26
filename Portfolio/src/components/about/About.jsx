@@ -3,22 +3,8 @@ import appstyles from "../../App.module.css";
 import img from "../../assets/aboutImg.png";
 import { useState, useEffect } from "react";
 export default function About() {
-  // const [isSmallScreen, setSmallScreen] = useState(false);
-
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     if (window.innerWidth < 768) {
-  //       setSmallScreen(true);
-  //     } else {
-  //       setSmallScreen(false);
-  //     }
-  //   };
-
-  //   handleResize();
-  //   window.addEventListener("resize", handleResize);
-  //   return () => window.removeEventListener("resize", handleResize);
-  // }, []);
-  return (
+  
+  return ( 
     <section id="About" className={styles.about}>
 
 

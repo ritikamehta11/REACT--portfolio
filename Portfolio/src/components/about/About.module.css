@@ -73,4 +73,18 @@
     flex-direction: column;
     text-align: center;
   }
+
+  .aboutImgOuterBox {
+    padding: 1em;
+
+  }
+
+  .aboutImgOuterBox>img {
+    width: 100%;
+
+  }
+
+  .aboutImgDiv {
+    width: 50%;
+  }
 }
