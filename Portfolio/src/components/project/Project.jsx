@@ -12,7 +12,7 @@ export default function Project() {
 
 
   useEffect(() => {
-    fetch('https://react-portfolio-sa7t.onrender.com/projects')
+    fetch('https://react-portfolio-mabf.onrender.com/projects')
       .then(response => {
       if (!response.ok) { 
         throw new Error('Network response was not ok');
